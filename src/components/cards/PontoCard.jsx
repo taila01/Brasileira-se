@@ -5,14 +5,16 @@ const PontoCard = ({ ponto }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="border-b border-gray-200 py-6 last:border-0">
-      <h3 className="text-xl font-bold text-gray-800 mb-2">{ponto.nome}</h3>
-      <p className="text-gray-600 mb-4 leading-relaxed">
+    <div className="p-8 bg-white dark:bg-neutral-900 rounded-[2rem] border border-slate-100 dark:border-neutral-800 transition-all">
+      <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-3">{ponto.nome}</h3>
+      <p className="text-slate-500 dark:text-neutral-400 mb-6 leading-relaxed">
         {ponto.descricao?.length > 150 ? `${ponto.descricao.substring(0, 150)}...` : ponto.descricao}
       </p>
-      <Button variant="outline" onClick={() => navigate(`/detalhes/${ponto.id}`)}>
-        ver detalhes
-      </Button>
+      <div className="flex justify-end">
+        <Button variant="outline" onClick={() => navigate(`/detalhes/${ponto.id}`)}>
+          ver detalhes
+        </Button>
+      </div>
     </div>
   );
 };

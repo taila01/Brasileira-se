@@ -5,12 +5,12 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="flex justify-between items-center py-6 border-b border-gray-200 mb-8">
+    <header className="flex justify-between items-center py-10 mb-8">
       <div 
-        className="border-2 border-gray-400 px-8 py-4 cursor-pointer text-gray-500 font-bold"
+        className="text-2xl font-black tracking-tighter text-slate-800 dark:text-white cursor-pointer uppercase"
         onClick={() => navigate('/')}
       >
-        Logotipo
+        Brasil<span className="text-blue-600">eira</span>
       </div>
       <Button onClick={() => navigate('/novo')}>
         cadastrar um ponto turístico
