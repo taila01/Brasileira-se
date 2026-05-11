@@ -1,5 +1,5 @@
 ```markdown
-# 💻 Brasileira-se - Frontend (React)
+# Brasileira-se - Frontend (React)
 
 Interface web moderna para visualização e cadastro de pontos turísticos do Brasil.
 
