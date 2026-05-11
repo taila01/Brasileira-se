@@ -68,9 +68,9 @@ const Detalhes = () => {
 
           <footer className="mt-12 pt-8 border-t border-slate-100 dark:border-neutral-800 flex justify-between items-center">
             <div className="text-xs text-slate-400 italic">
-              Registrado em: {new Date(ponto.dt_inclusao).toLocaleDateString('pt-BR')}
+              Registrado em: {new Date(ponto.dataInclusao).toLocaleDateString('pt-BR')}
             </div>
-            <Button variant="secondary" onClick={() => navigate('/')}>
+            <Button onClick={() => navigate('/')} className="bg-blue-600 hover:bg-blue-700 text-white px-8 rounded-xl h-12 transition-all">
               voltar para a listagem
             </Button>
           </footer>
